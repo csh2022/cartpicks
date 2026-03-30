@@ -349,12 +349,9 @@ a {
 
 .product-visual {
   display: grid;
-  place-items: end start;
+  place-items: center;
   min-height: 210px;
-  padding: 18px;
-  font-family: "Newsreader", Georgia, serif;
-  font-size: 1.45rem;
-  color: rgba(23, 21, 19, 0.78);
+  padding: 28px;
 }
 
 .visual-amber {
@@ -367,6 +364,14 @@ a {
 
 .visual-rose {
   background: linear-gradient(135deg, #ebe6e6 0%, #d5c8c8 100%);
+}
+
+.product-visual img {
+  width: 100%;
+  max-width: 240px;
+  max-height: 220px;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 24px rgba(27, 26, 25, 0.12));
 }
 
 .product-topline {
