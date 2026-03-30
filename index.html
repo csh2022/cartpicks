@@ -3,133 +3,181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CartPicks | 亚马逊好物与送礼灵感</title>
+    <title>CartPicks | 亚马逊送礼与家居好物精选</title>
     <meta
       name="description"
-      content="CartPicks 是一个围绕送礼灵感与家居好物的导购站 demo，展示精选亚马逊商品并引导用户跳转到官方页面完成购买。"
+      content="CartPicks 是一个围绕送礼灵感和家居好物的导购网站 demo，用编辑精选与榜单内容帮助用户更快找到值得买的亚马逊商品。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <a class="brand" href="#top">CartPicks</a>
-        <nav class="nav">
-          <a href="#collections">榜单</a>
-          <a href="#products">热门单品</a>
-          <a href="#framework">选品逻辑</a>
+    <div class="announcement-bar">
+      <span>Amazon Affiliate Demo</span>
+      <span>本页中的 Amazon 链接目前为占位示例，正式版会替换成真实 affiliate 链接。</span>
+    </div>
+
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="brand-lockup">
+          <a class="brand" href="#top">CartPicks</a>
+          <p class="brand-note">Shopping the internet a little more smartly.</p>
+        </div>
+        <nav class="primary-nav" aria-label="主导航">
+          <a href="#gift-guides">Gift Guides</a>
+          <a href="#home-picks">Home</a>
+          <a href="#deals">Best Deals</a>
+          <a href="#method">How We Pick</a>
         </nav>
       </header>
 
       <main id="top">
-        <section class="hero">
-          <div class="hero-copy">
-            <p class="eyebrow">Amazon Affiliate Demo</p>
-            <h1>把“值得买”做成一门生意。</h1>
-            <p class="hero-text">
-              CartPicks 不是泛泛的爆款搬运站，而是围绕
-              <strong>送礼</strong> 与 <strong>家居好物</strong>
-              的精选导购网站。用户在这里看榜单、看推荐、看理由，点击后跳转到亚马逊官方页面下单。
+        <section class="hero-grid">
+          <article class="hero-story">
+            <p class="section-kicker">Featured Story</p>
+            <h1>让“值得买”看起来像一本真的导购杂志，而不是一堆随手搬来的爆款。</h1>
+            <p class="hero-summary">
+              CartPicks 的方向不是全品类电商站，而是围绕
+              <strong>送礼</strong>、<strong>家居升级</strong> 和
+              <strong>低门槛幸福感消费</strong> 的精选推荐。用户点击后直接跳转亚马逊官方页面下单，我们通过联盟分销赚取佣金。
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#products">看热门单品</a>
-              <a class="button button-secondary" href="#framework">看选品框架</a>
+              <a class="button button-solid" href="#gift-guides">查看榜单</a>
+              <a class="button button-ghost" href="#method">看选品方法</a>
             </div>
-            <div class="signal-row">
-              <div class="signal-card">
-                <span class="signal-label">核心模式</span>
-                <strong>Affiliate 导购</strong>
+            <div class="hero-meta">
+              <div>
+                <span class="meta-label">内容形态</span>
+                <strong>榜单 + 商品卡 + 理由</strong>
               </div>
-              <div class="signal-card">
-                <span class="signal-label">第一版切口</span>
-                <strong>送礼 + 家居</strong>
+              <div>
+                <span class="meta-label">第一版切口</span>
+                <strong>送礼 + 家居好物</strong>
               </div>
-              <div class="signal-card">
-                <span class="signal-label">内容形态</span>
-                <strong>榜单 + 商品卡</strong>
+              <div>
+                <span class="meta-label">转化路径</span>
+                <strong>内容种草 -> Amazon 下单</strong>
               </div>
             </div>
-          </div>
-          <aside class="hero-panel">
-            <div class="panel-card accent-sand">
-              <span class="panel-label">本周主题</span>
-              <h2>送礼不踩雷</h2>
-              <p>用预算、场景和人群做筛选，而不是简单拼销量。</p>
-            </div>
-            <div class="panel-card accent-sage">
-              <span class="panel-label">MVP 栏目</span>
-              <ul>
-                <li>25 美元以内礼物</li>
-                <li>租房党桌面升级</li>
-                <li>实用家居小物</li>
+          </article>
+
+          <aside class="hero-rail">
+            <article class="rail-card tone-clay">
+              <p class="section-kicker">Current Angle</p>
+              <h2>礼物不靠贵，靠“送得准”。</h2>
+              <p>预算、对象、场景、实用度，是这类站点最容易做出差异化的四个轴。</p>
+            </article>
+            <article class="rail-card tone-moss">
+              <p class="section-kicker">Why This Works</p>
+              <ul class="bullet-list">
+                <li>比全品类爆款站更聚焦</li>
+                <li>适合 SEO、社媒、邮件内容</li>
+                <li>榜单页与单品页都能转化</li>
               </ul>
-            </div>
+            </article>
           </aside>
         </section>
 
-        <section class="section" id="collections">
-          <div class="section-heading">
-            <p class="eyebrow">Collections</p>
-            <h2>第一批值得做的榜单</h2>
-            <p>
-              这类页面最适合 SEO 和社媒传播，也是亚马逊联盟导购站最容易起量的基本盘。
+        <section class="category-strip">
+          <a href="#gift-guides">By Recipient</a>
+          <a href="#gift-guides">By Budget</a>
+          <a href="#gift-guides">By Occasion</a>
+          <a href="#home-picks">Desk Setup</a>
+          <a href="#home-picks">Home Upgrade</a>
+          <a href="#deals">Trending Finds</a>
+        </section>
+
+        <section class="editor-note">
+          <p>
+            <strong>编辑说明：</strong>
+            CartPicks 的目标是把“为什么值得买”解释清楚，而不只是堆满商品。正式版会补充
+            affiliate disclosure、真实联盟链接和更多专题内容。
+          </p>
+        </section>
+
+        <section class="content-section" id="gift-guides">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Gift Guides</p>
+              <h2>最适合起量的榜单内容</h2>
+            </div>
+            <p class="section-copy">
+              参考 The Strategist 和 Wirecutter 的做法，榜单不是单纯列商品，而是把“场景、预算和推荐理由”一起讲清楚。
             </p>
           </div>
-          <div class="collection-grid">
-            <article class="collection-card">
-              <span class="collection-tag">Budget Gifts</span>
-              <h3>25 美元以内的体面礼物</h3>
-              <p>适合办公室交换礼物、朋友生日、临时补位，不靠贵，靠选得准。</p>
+
+          <div class="story-grid">
+            <article class="story-card story-card-large">
+              <div class="story-media glow-gold"></div>
+              <div class="story-body">
+                <span class="story-tag">Budget Gifts</span>
+                <h3>25 美元以内，送出去不显廉价的 19 个礼物</h3>
+                <p>
+                  适合节日互送、同事交换礼物、朋友生日临时补位。重点不是“便宜”，而是“到手像你认真挑过”。
+                </p>
+                <a href="#products">查看示例商品</a>
+              </div>
             </article>
-            <article class="collection-card">
-              <span class="collection-tag">Home Upgrade</span>
-              <h3>租房党最值的家居升级</h3>
-              <p>从灯光、桌面收纳到氛围小物，专注“便宜但提升明显”的单品。</p>
+
+            <article class="story-card">
+              <div class="story-media glow-sage"></div>
+              <div class="story-body">
+                <span class="story-tag">Home Gift</span>
+                <h3>第一次搬家最值得送的家居好物</h3>
+                <p>围绕新居、小预算、实用度高的标准来选，适合“送了真的会用”。</p>
+                <a href="#products">查看示例商品</a>
+              </div>
             </article>
-            <article class="collection-card">
-              <span class="collection-tag">Gift Guide</span>
-              <h3>送男生不容易翻车的实用礼物</h3>
-              <p>不走花哨路线，强调使用频率、耐用感和到手即用。</p>
+
+            <article class="story-card">
+              <div class="story-media glow-rose"></div>
+              <div class="story-body">
+                <span class="story-tag">Desk Upgrade</span>
+                <h3>桌面升级最容易出效果的 12 个小物</h3>
+                <p>给办公室、租房卧室和内容创作者桌面用，适合做前后对比型内容。</p>
+                <a href="#products">查看示例商品</a>
+              </div>
             </article>
           </div>
         </section>
 
-        <section class="section section-spotlight" id="products">
-          <div class="section-heading">
-            <p class="eyebrow">Featured Products</p>
-            <h2>热门单品卡片示例</h2>
-            <p>
-              每个单品卡都给出明确的推荐理由和适合人群，避免网站看起来只是“罗列商品”。
+        <section class="content-section" id="home-picks">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Editor Picks</p>
+              <h2>单品卡需要像编辑推荐，而不是搜索结果。</h2>
+            </div>
+            <p class="section-copy">
+              我们把参考站的做法收成一个固定模板：一句结论、适合谁、不适合谁、推荐理由，再给 Amazon 跳转按钮。
             </p>
           </div>
 
           <div class="product-grid">
             <article class="product-card">
-              <div class="product-media warm-one">
+              <div class="product-visual visual-amber">
                 <span>Desk Glow</span>
               </div>
-              <div class="product-body">
-                <div class="meta-row">
-                  <span class="pill">Desk Setup</span>
-                  <span class="rating">适合夜间办公</span>
+              <div class="product-copy">
+                <div class="product-topline">
+                  <span class="story-tag">Desk Setup</span>
+                  <span class="product-score">适合夜间办公</span>
                 </div>
                 <h3>极简桌面氛围灯</h3>
                 <p>
-                  适合租房党和桌面升级新手，低预算也能明显提升桌面氛围和拍照质感。
+                  如果你想用最低预算让桌面“看起来更贵”，这是最容易出效果的一类产品。
                 </p>
-                <ul class="feature-list">
-                  <li>亮点：不占空间，提升明显</li>
-                  <li>适合：办公室、卧室、礼物场景</li>
-                  <li>不适合：追求高亮度主照明的人</li>
+                <ul class="bullet-list">
+                  <li>适合：租房党、办公室、内容拍摄桌面</li>
+                  <li>亮点：不占空间，氛围提升非常直接</li>
+                  <li>不适合：需要主照明的人</li>
                 </ul>
                 <a
-                  class="button button-primary"
+                  class="button button-solid"
                   href="https://www.amazon.com/s?k=minimal+desk+lamp"
                   target="_blank"
                   rel="noreferrer"
@@ -140,25 +188,25 @@
             </article>
 
             <article class="product-card">
-              <div class="product-media warm-two">
+              <div class="product-visual visual-sage">
                 <span>Clean Carry</span>
               </div>
-              <div class="product-body">
-                <div class="meta-row">
-                  <span class="pill">Travel Gift</span>
-                  <span class="rating">高复购场景</span>
+              <div class="product-copy">
+                <div class="product-topline">
+                  <span class="story-tag">Travel Gift</span>
+                  <span class="product-score">高复购场景</span>
                 </div>
                 <h3>多格旅行收纳包</h3>
                 <p>
-                  很适合做送礼商品，因为使用门槛低、受众广，且容易在榜单里形成“顺手加购”。
+                  这是典型的“谁收到都能用”的礼物型商品，适合榜单页、节日页和预算页反复出现。
                 </p>
-                <ul class="feature-list">
-                  <li>亮点：线材、洗漱、配件都能装</li>
-                  <li>适合：送礼、短途出差、留学生</li>
-                  <li>不适合：超轻装 users</li>
+                <ul class="bullet-list">
+                  <li>适合：出差、旅行、送礼、留学生</li>
+                  <li>亮点：低理解成本，容易下单</li>
+                  <li>不适合：超轻装用户</li>
                 </ul>
                 <a
-                  class="button button-primary"
+                  class="button button-solid"
                   href="https://www.amazon.com/s?k=travel+organizer+pouch"
                   target="_blank"
                   rel="noreferrer"
@@ -169,25 +217,25 @@
             </article>
 
             <article class="product-card">
-              <div class="product-media warm-three">
+              <div class="product-visual visual-rose">
                 <span>Calm Kitchen</span>
               </div>
-              <div class="product-body">
-                <div class="meta-row">
-                  <span class="pill">Home Gift</span>
-                  <span class="rating">适合新居礼物</span>
+              <div class="product-copy">
+                <div class="product-topline">
+                  <span class="story-tag">Home Gift</span>
+                  <span class="product-score">适合新居礼物</span>
                 </div>
-                <h3>台面小型咖啡工具套装</h3>
+                <h3>台面咖啡工具套装</h3>
                 <p>
-                  适合“看上去比价格贵”的礼物路线，也适合家居氛围内容里的场景化推荐。
+                  适合走“看上去比实际价格更有质感”的路线，也是非常好的内容拍摄素材。
                 </p>
-                <ul class="feature-list">
-                  <li>亮点：仪式感强，适合做内容图</li>
-                  <li>适合：新居、情侣、送礼合集</li>
+                <ul class="bullet-list">
+                  <li>适合：新居、情侣、礼物合集</li>
+                  <li>亮点：视觉氛围强，容易形成点击</li>
                   <li>不适合：完全不喝咖啡的人</li>
                 </ul>
                 <a
-                  class="button button-primary"
+                  class="button button-solid"
                   href="https://www.amazon.com/s?k=coffee+bar+accessories"
                   target="_blank"
                   rel="noreferrer"
@@ -199,59 +247,76 @@
           </div>
         </section>
 
-        <section class="section framework" id="framework">
-          <div class="section-heading">
-            <p class="eyebrow">Framework</p>
-            <h2>这门生意不是“找爆款”，而是“做筛选”。</h2>
+        <section class="content-section" id="deals">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">Trending Format</p>
+              <h2>导购站要有“发现感”。</h2>
+            </div>
+            <p class="section-copy">
+              参考 Slickdeals 的启发，首页不能只有解释，还要有让人继续刷下去的“正在热门”与“可快速点击”的内容块。
+            </p>
           </div>
-          <div class="framework-grid">
-            <div class="framework-card">
-              <span class="step">01</span>
-              <h3>先选人群</h3>
-              <p>租房党、送礼场景、宠物主人，比“全网好物”更容易形成稳定内容风格。</p>
-            </div>
-            <div class="framework-card">
-              <span class="step">02</span>
-              <h3>再选场景</h3>
-              <p>生日礼物、桌面升级、卧室氛围，比“品类站”更利于用户做出购买决策。</p>
-            </div>
-            <div class="framework-card">
-              <span class="step">03</span>
-              <h3>最后选商品</h3>
-              <p>每个商品都要回答三个问题：为什么值得买、适合谁、为什么现在买。</p>
-            </div>
+
+          <div class="trending-grid">
+            <article class="mini-tile">
+              <span class="tile-number">01</span>
+              <h3>今天值得点开的 5 个小礼物</h3>
+              <p>适合低客单价、高点击率内容。</p>
+            </article>
+            <article class="mini-tile">
+              <span class="tile-number">02</span>
+              <h3>桌面升级最容易被加购的产品</h3>
+              <p>适合和“办公、学习、生产力”内容联动。</p>
+            </article>
+            <article class="mini-tile">
+              <span class="tile-number">03</span>
+              <h3>本周最像“送出去有面子”的家居礼物</h3>
+              <p>适合做社媒卡片和邮件主题。</p>
+            </article>
           </div>
         </section>
 
-        <section class="section cta">
-          <div class="cta-card">
-            <p class="eyebrow">Next Step</p>
-            <h2>下一步就该接 Amazon Associates，并把这些链接替换成真实 affiliate 链接。</h2>
-            <p>
-              第一版 demo 先验证内容形态、页面风格和跳转链路，等账号准备好之后，再接入真实的联盟链接与价格展示策略。
-            </p>
-            <div class="hero-actions">
-              <button class="button button-primary" id="view-plan">查看上线清单</button>
+        <section class="content-section method-section" id="method">
+          <div class="section-head">
+            <div>
+              <p class="section-kicker">How We Pick</p>
+              <h2>专业感，来自解释推荐逻辑。</h2>
             </div>
+            <p class="section-copy">
+              我们不追求像大型媒体那样的长评测，但会保留一套清晰、统一、可复制的筛选框架。
+            </p>
+          </div>
+
+          <div class="method-grid">
+            <article class="method-card">
+              <span class="method-step">01</span>
+              <h3>先定场景</h3>
+              <p>送礼、搬家、桌面升级、卧室氛围，比纯分类更贴近用户需求。</p>
+            </article>
+            <article class="method-card">
+              <span class="method-step">02</span>
+              <h3>再定预算</h3>
+              <p>预算页最利于点击和转化，也是适合社媒传播的标准内容单元。</p>
+            </article>
+            <article class="method-card">
+              <span class="method-step">03</span>
+              <h3>最后给理由</h3>
+              <p>每个推荐都解释“为什么它值得买”，这才是媒体型 affiliate 站的护城河。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="final-cta">
+          <div class="final-cta-card">
+            <p class="section-kicker">Next Step</p>
+            <h2>下一步就接 Amazon Associates，把这些示例跳转替换成真实 affiliate 链接。</h2>
+            <p>
+              现在这版已经像一个真正的内容导购站，而不是普通电商落地页。后续重点应该转向内容规模、联盟账号和数据验证。
+            </p>
           </div>
         </section>
       </main>
     </div>
-
-    <dialog class="plan-dialog" id="plan-dialog">
-      <div class="dialog-head">
-        <h2>CartPicks 上线清单</h2>
-        <button class="icon-button" id="close-plan" aria-label="关闭">×</button>
-      </div>
-      <ol class="plan-list">
-        <li>申请 Amazon Associates 账号并拿到 affiliate tag</li>
-        <li>把 demo 中的 Amazon 搜索链接替换成真实商品 affiliate 链接</li>
-        <li>补一页明确的 affiliate disclosure</li>
-        <li>准备第一批 30-50 个精选商品与 10 篇榜单内容</li>
-        <li>接 GitHub 与 Vercel，完成首版上线</li>
-      </ol>
-    </dialog>
-
-    <script src="script.js"></script>
   </body>
 </html>
