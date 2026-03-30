@@ -1,13 +1,13 @@
 :root {
-  --bg: #f6f2ea;
-  --paper: #fffdf9;
+  --bg: #f4f2ee;
+  --paper: #fffdfa;
   --paper-strong: #ffffff;
   --ink: #171513;
-  --muted: #69615a;
+  --muted: #656a72;
   --line: rgba(23, 21, 19, 0.1);
-  --accent: #30463a;
-  --accent-deep: #223328;
-  --gold: #c1a37b;
+  --accent: #344556;
+  --accent-deep: #253340;
+  --gold: #b7a08a;
   --shadow: 0 14px 32px rgba(24, 20, 16, 0.05);
 }
 
@@ -23,7 +23,7 @@ body {
   margin: 0;
   color: var(--ink);
   font-family: "Manrope", "Segoe UI", sans-serif;
-  background: linear-gradient(180deg, #faf7f2 0%, var(--bg) 100%);
+  background: linear-gradient(180deg, #fbfaf8 0%, var(--bg) 100%);
 }
 
 a {
@@ -220,11 +220,11 @@ a {
 }
 
 .tone-clay {
-  background: linear-gradient(180deg, #f2ebe2 0%, #e8ddd1 100%);
+  background: linear-gradient(180deg, #edf0f3 0%, #dee5ea 100%);
 }
 
 .tone-moss {
-  background: linear-gradient(180deg, #edf1eb 0%, #e1e8dd 100%);
+  background: linear-gradient(180deg, #eef1ee 0%, #e2e6e2 100%);
 }
 
 .bullet-list {
@@ -247,7 +247,7 @@ a {
 .category-strip a {
   padding: 10px 14px;
   border-radius: 999px;
-  background: #f7f4ee;
+  background: #f4f5f6;
   border: 1px solid var(--line);
   font-size: 0.94rem;
   font-weight: 700;
@@ -302,19 +302,19 @@ a {
 .glow-gold {
   background:
     radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.42), transparent 26%),
-    linear-gradient(135deg, #efe4d0 0%, #ddc39c 100%);
+    linear-gradient(135deg, #ece7de 0%, #d6c7b4 100%);
 }
 
 .glow-sage {
   background:
     radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.45), transparent 26%),
-    linear-gradient(135deg, #e7ede3 0%, #c8d5bf 100%);
+    linear-gradient(135deg, #e6eaee 0%, #c8d0da 100%);
 }
 
 .glow-rose {
   background:
     radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.45), transparent 28%),
-    linear-gradient(135deg, #f3e9e4 0%, #ddc8bf 100%);
+    linear-gradient(135deg, #ece8eb 0%, #d6c9d2 100%);
 }
 
 .story-body,
@@ -358,15 +358,15 @@ a {
 }
 
 .visual-amber {
-  background: linear-gradient(135deg, #eadcc5 0%, #d8bb93 100%);
+  background: linear-gradient(135deg, #dde3e8 0%, #bfcbd6 100%);
 }
 
 .visual-sage {
-  background: linear-gradient(135deg, #e6ece2 0%, #c7d3be 100%);
+  background: linear-gradient(135deg, #e7ecee 0%, #c4cfd5 100%);
 }
 
 .visual-rose {
-  background: linear-gradient(135deg, #f0e5df 0%, #d8c0b7 100%);
+  background: linear-gradient(135deg, #ebe6e6 0%, #d5c8c8 100%);
 }
 
 .product-topline {
@@ -409,7 +409,7 @@ a {
 .final-cta-card {
   padding: 34px;
   border-radius: 26px;
-  background: linear-gradient(135deg, #f6efe5 0%, #eee4d7 56%, #f7f3ec 100%);
+  background: linear-gradient(135deg, #eef1f4 0%, #e4e7eb 56%, #f7f6f3 100%);
 }
 
 @media (max-width: 1080px) {
