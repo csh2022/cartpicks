@@ -1,16 +1,14 @@
 :root {
-  --bg: #f4efe7;
-  --paper: #fffaf3;
-  --paper-strong: #fffdf9;
-  --ink: #1e1712;
-  --muted: #66584d;
-  --line: rgba(30, 23, 18, 0.11);
-  --accent: #a65135;
-  --accent-deep: #7d3926;
-  --olive: #d6e1d0;
-  --rose: #eed7d4;
-  --gold: #ead0a0;
-  --shadow: 0 18px 60px rgba(53, 31, 18, 0.08);
+  --bg: #f6f2ea;
+  --paper: #fffdf9;
+  --paper-strong: #ffffff;
+  --ink: #171513;
+  --muted: #69615a;
+  --line: rgba(23, 21, 19, 0.1);
+  --accent: #30463a;
+  --accent-deep: #223328;
+  --gold: #c1a37b;
+  --shadow: 0 14px 32px rgba(24, 20, 16, 0.05);
 }
 
 * {
@@ -25,10 +23,7 @@ body {
   margin: 0;
   color: var(--ink);
   font-family: "Manrope", "Segoe UI", sans-serif;
-  background:
-    radial-gradient(circle at top left, rgba(234, 208, 160, 0.35), transparent 28%),
-    radial-gradient(circle at top right, rgba(166, 81, 53, 0.14), transparent 24%),
-    linear-gradient(180deg, #faf6ef 0%, var(--bg) 100%);
+  background: linear-gradient(180deg, #faf7f2 0%, var(--bg) 100%);
 }
 
 a {
@@ -42,21 +37,21 @@ a {
   gap: 12px;
   justify-content: center;
   padding: 10px 16px;
-  background: #201814;
-  color: #f6ede2;
+  background: #171513;
+  color: #f4efe9;
   font-size: 0.84rem;
 }
 
 .announcement-bar span:first-child {
   font-weight: 800;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .site-shell {
   width: min(1240px, calc(100vw - 32px));
   margin: 0 auto;
-  padding: 22px 0 80px;
+  padding: 28px 0 88px;
 }
 
 .site-header {
@@ -70,15 +65,15 @@ a {
 
 .brand {
   display: inline-block;
-  font-family: "DM Serif Display", Georgia, serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  letter-spacing: -0.04em;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  letter-spacing: -0.05em;
 }
 
 .brand-note {
-  margin: 6px 0 0;
+  margin: 8px 0 0;
   color: var(--muted);
-  font-size: 0.96rem;
+  font-size: 0.95rem;
 }
 
 .primary-nav {
@@ -91,8 +86,8 @@ a {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(300px, 0.7fr);
-  gap: 24px;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  gap: 22px;
   margin: 34px 0 18px;
 }
 
@@ -105,15 +100,14 @@ a {
 .final-cta-card,
 .editor-note,
 .category-strip {
-  background: rgba(255, 250, 243, 0.76);
-  backdrop-filter: blur(12px);
+  background: rgba(255, 253, 249, 0.92);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
 
 .hero-story {
-  padding: 34px;
-  border-radius: 34px;
+  padding: 42px;
+  border-radius: 28px;
 }
 
 .section-kicker,
@@ -123,25 +117,25 @@ a {
   align-items: center;
   gap: 6px;
   margin: 0;
-  color: var(--accent-deep);
+  color: var(--accent);
   text-transform: uppercase;
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 800;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
 }
 
 .hero-story h1,
 .section-head h2,
 .final-cta-card h2 {
   margin: 16px 0;
-  font-family: "DM Serif Display", Georgia, serif;
-  line-height: 1;
+  font-family: "Newsreader", Georgia, serif;
+  line-height: 0.96;
   letter-spacing: -0.05em;
 }
 
 .hero-story h1 {
   max-width: 10ch;
-  font-size: clamp(3.3rem, 5vw, 5.6rem);
+  font-size: clamp(3.4rem, 5vw, 5.8rem);
 }
 
 .hero-summary,
@@ -153,7 +147,7 @@ a {
 .final-cta-card p,
 .editor-note p {
   color: var(--muted);
-  line-height: 1.75;
+  line-height: 1.78;
 }
 
 .hero-actions {
@@ -182,7 +176,7 @@ a {
 
 .button-solid {
   background: var(--accent);
-  color: #fff8f4;
+  color: #fbfaf7;
 }
 
 .button-solid:hover,
@@ -192,7 +186,7 @@ a {
 
 .button-ghost {
   border-color: var(--line);
-  background: rgba(255, 255, 255, 0.44);
+  background: transparent;
 }
 
 .hero-meta {
@@ -203,8 +197,8 @@ a {
 
 .hero-meta div {
   padding: 16px;
-  border-radius: 18px;
-  background: var(--paper-strong);
+  border-radius: 16px;
+  background: #f7f4ee;
   border: 1px solid var(--line);
 }
 
@@ -220,24 +214,24 @@ a {
 }
 
 .rail-card {
-  padding: 24px;
-  border-radius: 28px;
+  padding: 28px;
+  border-radius: 24px;
   min-height: 210px;
 }
 
 .tone-clay {
-  background: linear-gradient(180deg, #f8e2cf 0%, #f0c7a8 100%);
+  background: linear-gradient(180deg, #f2ebe2 0%, #e8ddd1 100%);
 }
 
 .tone-moss {
-  background: linear-gradient(180deg, #ecf3e7 0%, #d7e1cf 100%);
+  background: linear-gradient(180deg, #edf1eb 0%, #e1e8dd 100%);
 }
 
 .bullet-list {
   margin: 14px 0 0;
   padding-left: 18px;
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.72;
 }
 
 .category-strip {
@@ -246,14 +240,14 @@ a {
   flex-wrap: wrap;
   align-items: center;
   padding: 16px 18px;
-  border-radius: 22px;
+  border-radius: 18px;
   margin-bottom: 18px;
 }
 
 .category-strip a {
   padding: 10px 14px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.58);
+  background: #f7f4ee;
   border: 1px solid var(--line);
   font-size: 0.94rem;
   font-weight: 700;
@@ -261,16 +255,16 @@ a {
 
 .editor-note {
   padding: 18px 22px;
-  border-radius: 22px;
+  border-radius: 18px;
   margin-bottom: 18px;
 }
 
 .content-section {
   margin-bottom: 18px;
-  padding: 28px;
-  border-radius: 34px;
-  background: rgba(255, 250, 242, 0.52);
-  border: 1px solid rgba(30, 23, 18, 0.08);
+  padding: 34px;
+  border-radius: 28px;
+  background: rgba(255, 251, 246, 0.72);
+  border: 1px solid rgba(23, 21, 19, 0.08);
 }
 
 .section-head {
@@ -282,7 +276,7 @@ a {
 }
 
 .section-head h2 {
-  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
 }
 
 .story-grid {
@@ -293,7 +287,7 @@ a {
 
 .story-card {
   overflow: hidden;
-  border-radius: 26px;
+  border-radius: 22px;
 }
 
 .story-card-large {
@@ -301,26 +295,26 @@ a {
 }
 
 .story-media {
-  min-height: 210px;
+  min-height: 220px;
   background-size: cover;
 }
 
 .glow-gold {
   background:
-    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.46), transparent 26%),
-    linear-gradient(135deg, #f7dfba 0%, #e0a96f 100%);
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.42), transparent 26%),
+    linear-gradient(135deg, #efe4d0 0%, #ddc39c 100%);
 }
 
 .glow-sage {
   background:
-    radial-gradient(circle at 30% 20%, rgba(255,255,255,0.48), transparent 26%),
-    linear-gradient(135deg, #dce8d1 0%, #9db18b 100%);
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.45), transparent 26%),
+    linear-gradient(135deg, #e7ede3 0%, #c8d5bf 100%);
 }
 
 .glow-rose {
   background:
-    radial-gradient(circle at 25% 25%, rgba(255,255,255,0.52), transparent 28%),
-    linear-gradient(135deg, #f1ddd7 0%, #d6aaa2 100%);
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.45), transparent 28%),
+    linear-gradient(135deg, #f3e9e4 0%, #ddc8bf 100%);
 }
 
 .story-body,
@@ -333,13 +327,13 @@ a {
 .mini-tile h3,
 .method-card h3 {
   margin: 12px 0 10px;
-  font-size: 1.25rem;
-  line-height: 1.3;
+  font-size: 1.24rem;
+  line-height: 1.35;
 }
 
 .story-body a {
   font-weight: 800;
-  color: var(--accent-deep);
+  color: var(--accent);
 }
 
 .product-grid {
@@ -350,29 +344,29 @@ a {
 
 .product-card {
   overflow: hidden;
-  border-radius: 28px;
+  border-radius: 22px;
 }
 
 .product-visual {
   display: grid;
   place-items: end start;
-  min-height: 200px;
+  min-height: 210px;
   padding: 18px;
-  font-family: "DM Serif Display", Georgia, serif;
-  font-size: 1.4rem;
-  color: rgba(30, 23, 18, 0.76);
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 1.45rem;
+  color: rgba(23, 21, 19, 0.78);
 }
 
 .visual-amber {
-  background: linear-gradient(135deg, #f4d1a9 0%, #dd9a63 100%);
+  background: linear-gradient(135deg, #eadcc5 0%, #d8bb93 100%);
 }
 
 .visual-sage {
-  background: linear-gradient(135deg, #e0ead7 0%, #adc19e 100%);
+  background: linear-gradient(135deg, #e6ece2 0%, #c7d3be 100%);
 }
 
 .visual-rose {
-  background: linear-gradient(135deg, #f3e1db 0%, #d3afa5 100%);
+  background: linear-gradient(135deg, #f0e5df 0%, #d8c0b7 100%);
 }
 
 .product-topline {
@@ -398,14 +392,14 @@ a {
 .mini-tile,
 .method-card {
   padding: 24px;
-  border-radius: 24px;
+  border-radius: 20px;
 }
 
 .tile-number,
 .method-step {
-  font-family: "DM Serif Display", Georgia, serif;
+  font-family: "Newsreader", Georgia, serif;
   font-size: 2rem;
-  color: #c29a4b;
+  color: var(--gold);
 }
 
 .final-cta {
@@ -414,8 +408,8 @@ a {
 
 .final-cta-card {
   padding: 34px;
-  border-radius: 32px;
-  background: linear-gradient(135deg, #fff0df 0%, #f6ded1 56%, #efe6d7 100%);
+  border-radius: 26px;
+  background: linear-gradient(135deg, #f6efe5 0%, #eee4d7 56%, #f7f3ec 100%);
 }
 
 @media (max-width: 1080px) {
@@ -456,6 +450,6 @@ a {
   }
 
   .hero-story h1 {
-    font-size: 2.8rem;
+    font-size: 2.9rem;
   }
 }
